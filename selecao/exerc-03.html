@@ -2,8 +2,14 @@
     //Crie um programa que calcule a média semestral de um aluno com base em duas notas. Se a média for 6,0 ou superior, exiba uma mensagem de aprovação.
 
     //entrada
+    let nota01 = parseFloat(prompt("Insira a Nota 01" ))
+    let nota02 = parseFloat(prompt("Insira a Nota 02" ))
 
     //processamento
-    
+    let media = (nota01 + nota02) / 2
+if(media >=6){
+    resposta = "Aprovado"
+}
     //saida
+document.write(resposta)
 </script>
