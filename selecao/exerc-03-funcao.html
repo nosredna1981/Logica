@@ -7,10 +7,17 @@
     let nota02 = parseFloat(prompt("Insira a Nota 02" ))
 
     //processamento
-    let media = (nota01 + nota02) / 2
+    function calcularMedia(nota01 = 0, nota02 = 0){
+        return (nota01 + nota02) / 2
+    }
+    function verificarResultado(media)
+    let resposta = ""
 if(media >=6){
     resposta = "Aprovado"
+    return resposta
 }
+let media = calcularMedia(nota01, nota02)
+let resultado = verificarResultado(madia)
     //saida
 document.write(resposta)
 </script>
