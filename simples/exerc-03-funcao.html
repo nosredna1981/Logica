@@ -5,10 +5,10 @@
 //entrada
 let TemperaturaC = parseFloat(prompt("Temperatura em graus Celsius?"))
 //processamento
-function caucularTemperatura(valorTemperaturaC){
-return (TemperaturaC * 9/5) + 32
+function caucularTemperaturaF(valorTemperaturaC){
+return (valorTemperaturaC * 9/5) + 32
 }
-let temperaturaF = caucularTemperatura(TemperaturaC)
+let temperaturaF = caucularTemperaturaF(TemperaturaC)
 //saida
 
 document.write("valor correspondente em graus Fahrenheit: <br>" + temperaturaF)

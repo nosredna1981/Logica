@@ -5,14 +5,14 @@
 //entrada
 let raio = parseFloat(prompt("Qual o Raio?"))
 //processamento
-function calculAreaCirculo(valorRaio){
+function calcularAreaCirculo(valorRaio){
     const PI = 3.14
     return PI * (valorRaio * valorRaio)
 }
-let area = calculAreaCirculo(raio)
+let area = calcularAreaCirculo(raio)
 
 //saida
 document.write("Area do circulo: <br>" , area)
-document.write("Area do circulo: <br>" , calculAreaCirculo(raio*2))
-document.write("Area do circulo: <br>" , calculAreaCirculo(1000))
+document.write("Area do circulo: <br>" , calcularAreaCirculo(raio*2))
+document.write("Area do circulo: <br>" , calcularAreaCirculo(1000))
 </script>
