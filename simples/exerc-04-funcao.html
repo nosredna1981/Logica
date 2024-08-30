@@ -17,7 +17,13 @@
         let quantLampadas = quantidadepotenciaIluminarAmbiente / potencia
         return quantLampadas 
     }
-    
+    let quantLampadasTradicional =calcularQuantlamapadas(potencia, largura, comprimento)
+    let diferencialLed = potencia / 7
+    let quantLampadasLed = calcularQuantlamapadas(potencia, largura, comprimento, diferencialLed)
+
     // Saída
-   document.write("Quantidade de lâmpadas: <br>", calcularQuantlamapadas(potencia, largura, comprimento))
+   document.write("<br>Quantidade de lâmpadas tradicionais : ", quantLampadasTradicional)
+   document.write("<br>Quantidade de lâmpadas led : ", quantLampadasLed)
+
+   alert("Quantidade de lâmpadas tradicionais : " + quantLampadasTradicional + "\nQuantidade de Lâmpadas Led : " + quantLampadasLed)
 </script>
