@@ -1,14 +1,17 @@
 <meta charset="utf-8">
 <script>
     //Faça um algoritmo que conte de 1 a 100 e a cada múltiplo de 10 emita uma mensagem: “Múltiplo de 10”.https://www.w3schools.com/js/js_loop_for.asp
-    
+    //entrada
+
     //processamento
+    let resposta = ''
 for (let numero  = + 1; numero <= 100; numero++) {
     if (numero % 10 == 0) {
-         document.write(numero + 'Multiplo de 10 <br>')
+         resposta += (numero + ' Multiplo de 10 <br> ')
     }else {
-    document.write(numero + '<br>')
+         resposta += (numero + '<br>')
+    }
 }
-}
-
+//saida
+document.write(resposta)
 </script>
