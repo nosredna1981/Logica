@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<script>
+    
+    //Elabore um algoritmo que gere e escreve os números ímpares entre números entre 100 e 200.
+
+    //entrada
+
+
+    //processamento
+    function numerosImpares(limite = 200){    
+    let resposta = ''
+for (let numero  = 100; numero <= limite; numero++) {
+    if (numero % 2 !== 0) {
+         //resposta += (numero + ' Multiplo de + multiplo + <br> ')
+         resposta += `${numero} Numero impar <br>`
+
+    }
+}
+    return resposta
+    }
+//saida
+document.write(numerosImpares(200))
+
+
+</script>
