@@ -1,25 +1,25 @@
 <meta charset="utf-8">
 <script>
     // Entrada
-    let numeroDeMacas = parseInt(prompt("Insira o número de maçãs compradas:"))
+    let numeroDeMacas = parseInt(prompt("Insira o número de maçãs compradas:"));
 
     // Processamento
     function calcularValorTotal(numeroDeMacas) {
-        let precoPorMaca
+        let precoPorMaca;
 
         if (numeroDeMacas < 12) {
-            precoPorMaca = 0.30
+            precoPorMaca = 0.30;
         } else {
-            precoPorMaca = 0.25
+            precoPorMaca = 0.25;
         }
 
-        let valorTotal = numeroDeMacas * precoPorMaca
-        return valorTotal
+        let valorTotal = numeroDeMacas * precoPorMaca;
+        return valorTotal;
     }
 
-    let valorTotal = calcularValorTotal(numeroDeMacas)
+    let valorTotal = calcularValorTotal(numeroDeMacas);
 
     // Saída
-    document.write("O valor total da compra é R$ " , valorTotal)
-    alert("<br>O valor total da compra é R$ \n" + valorTotal)
-</script>
+    document.write("O valor total da compra é R$ " + valorTotal.toFixed(2));
+    alert("O valor total da compra é R$ " + valorTotal.toFixed(2));
+</script>gitt
