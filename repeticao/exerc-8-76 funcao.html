@@ -1,0 +1,41 @@
+
+<meta charset="utf-8">
+<script>
+        // Construa um algoritmo que leia 50 valores inteiros e positivos e: 
+        //Encontre o maior valor, 
+        //Encontre o menor valor, 
+        
+        //Calcule a média dos números lidos
+
+        //entrada
+        let maior = 0
+        let menor = Infinity
+        let media = 0
+        let soma = 0
+        let quant = 5
+        let listValor = []
+        //processamento
+        function processarValores(maior, menor, media) {
+       for (let indexValor = 1; indexValor <= quant; indexValor++) {
+            let valor = ParseInt(prompt(`Digite o ${indexValor}º?`))
+           document.write(`${indexValor}º valor: ${valor} <br>`)
+            if (valor > maior) {
+                    maior = valor
+                }
+                if (valor < menor) {
+                    menor = valor
+                }
+                soma += valor
+            }            
+            media = soma / quant
+            listValor[indexValor - 1] = valor
+        }
+
+           return (maior,menor, media)                      
+        
+    
+        //saida
+        document.write(processarValores(`Maior: ${maior}`))
+        document.write(processarValores(`Menor: ${menor}`))
+        document.write(processarValores(`Media: ${media}`))
+</script>
