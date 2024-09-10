@@ -1,12 +1,17 @@
 
 <meta charset="utf-8">
 <script>
+<<<<<<< HEAD
     //Tem-se um conjunto de dados contendo a altura e o sexo (masculino, feminino) de 50 pessoas. Fazer um algoritmo que calcule e escreva:
+=======
+    //Tem-se um conjunto de dados contendo a altura e o sexo(masculino, feminino) de 50 pessoas.Fazer um algoritmo que calcule e escreva:
+>>>>>>> 173e41b2c4f05a6a81c3e540ca8d183c41376d29
     //A maior e a menor altura do grupo;
     //A média de altura das mulheres;
     //O número de homens.
 
     //entrada
+<<<<<<< HEAD
        
  
         let maiorAltura = 0
@@ -43,4 +48,38 @@
     document.write(`Menor Altura: ${menorAltura}`)
     document.write(`Media de altura Mulheres: ${mediaAlturaMulheres}`)
     document.write(`Quantidade Homens: ${quantHomen}`)
+=======
+    let maiorAltura = 0
+    let menorAltura = Infinity
+    let mediaAlturaMulheres = 0
+    let quantHomens = 0
+    let quantPessoas = 5
+
+    //processamento
+    let somaAltura = 0
+    for (let indexValor = 1; indexValor <= quant; indexValor++) {
+        let altura = parseFloat(prompt(`Digite a altura?`))
+        let sexo = prompt(`Digite o sexo[F/M]?`)
+
+        if (altura > maiorAltura) {
+            maiorAltura = altura
+        }
+
+        if (altura < menorAltura) {
+            menorAltura = altura
+        }
+
+        if (sexo == "M" || sexo == "m") {
+            quantHomens++
+        } else {
+            somaAltura += altura
+        }
+    }
+    mediaAlturaMulheres = somaAltura / (quantPessoas - quantHomens)
+    //saida
+    document.write(`Maior Altura: ${maiorAltura} <br>`)
+    document.write(`Menor Altura: ${menorAltura}`)
+    document.write(`Media de altura Mulheres: ${mediaAlturaMulheres}`)
+    document.write(`Numeros Homens: ${quantHomens}`)
+>>>>>>> 173e41b2c4f05a6a81c3e540ca8d183c41376d29
 </script>

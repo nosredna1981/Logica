@@ -1,18 +1,24 @@
 <meta charset="utf-8">
 <script>
-    //Faça um algoritmo que conte de 1 a 100 e a cada múltiplo de 10 emita uma mensagem: “Múltiplo de 10”.https://www.w3schools.com/js/js_loop_for.asp
+    //Faça um algoritmo que conte de 1 a 100 e a cada múltiplo de 10 emita uma mensagem: “Múltiplo de 10”.
+    //https://www.w3schools.com/js/js_loop_for.asp
+
     //entrada
 
     //processamento
-    let resposta = ''
-for (let numero  = 1; numero <= 100; numero++) {
-    if (numero % 10 == 0) {
-         resposta += (numero + ' Multiplo de 10 <br> ')
-    }else {
-         resposta += (numero + '<br>')
+    function contaMultiplos(limite = 100, multiplo = 10) {
+        let resposta = ''
+        for (let numero = 1; numero <= limite; numero++) {
+            if (numero % multiplo == 0) {             
+                resposta += `${numero} Multiplo de ${multiplo} <br>`
+            } else {
+                resposta += `${numero} <br>`
+            }
+        }
+        return resposta
     }
-}
-//saida
-document.write(resposta)
+
+    //saida
+    document.write(contaMultiplos(50, 5))
 
 </script>

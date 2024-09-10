@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 <meta charset="utf-8">
 <script>
     //Construa um algoritmo que leia 50 valores inteiros e positivos e: 
@@ -35,4 +36,41 @@
     document.write(`Maior: ${maior}`)
     document.write(`Menor: ${menor}`)
     document.write(`Media: ${media}`)
+=======
+
+<meta charset="utf-8">
+<script>
+    //Construa um algoritmo que leia 50 valores inteiros e positivos e:
+    //Encontre o maior valor
+    //Encontre o menor valor
+    //Calcule a média dos números lidos
+
+    //entrada
+    let maior = 0
+    let menor = Infinity
+    let media = 0
+    let quant = 5
+
+    let listValor = []
+    //processamento
+    let soma = 0
+    for (let indexValor = 1; indexValor <= quant; indexValor++) {
+        let valor = parseInt(prompt(`Digite o ${indexValor}º?`))
+  
+        if (valor > maior) {
+            maior = valor
+        }
+        if (valor < menor) {
+            menor = valor
+        }
+        soma += valor
+        listValor[indexValor - 1] = valor
+    }
+    media = soma / quant
+    //saida
+    document.write(`Maior: ${maior}`)
+    document.write(`Menor: ${menor}`)
+    document.write(`Media: ${media}`)
+    document.write(`Lista de Valores: ${listValor}`)
+>>>>>>> 173e41b2c4f05a6a81c3e540ca8d183c41376d29
 </script>
